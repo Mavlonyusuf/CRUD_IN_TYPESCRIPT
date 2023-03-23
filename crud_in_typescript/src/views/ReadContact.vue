@@ -33,7 +33,7 @@
 
       <div class="flex items-center py-10" v-if="!loading && isDone()">
         <div class="w-1/2">
-          <img :src="contact.photo" alt="User" class="w-1/2 rounded-full" />
+          <img :src="contact['photo']" alt="User" class="w-1/2 rounded-full" />
         </div>
         <div class="w-1/2">
           <ul
@@ -44,7 +44,7 @@
                 Name :
               </span>
               <span class="pl-3 tracking-normal text-slate-200 font-medium">{{
-                contact.name
+                contact["name"]
               }}</span>
             </li>
             <li class="flex border-b border-fuchsia-600 py-2 px-10">
@@ -52,7 +52,7 @@
                 Email :
               </span>
               <span class="pl-3 tracking-normal text-slate-200 font-medium">{{
-                contact.email
+                contact["email"]
               }}</span>
             </li>
             <li class="flex py-2 px-10 border-b border-fuchsia-600">
@@ -60,7 +60,7 @@
                 Mobile :
               </span>
               <span class="pl-3 tracking-normal text-slate-200 font-medium">{{
-                contact.mobile
+                contact["mobile"]
               }}</span>
             </li>
             <li class="flex border-b border-fuchsia-600 py-2 px-10">
@@ -68,7 +68,7 @@
                 Company :
               </span>
               <span class="pl-3 tracking-normal text-slate-200 font-medium">{{
-                contact.company
+                contact["company"]
               }}</span>
             </li>
             <li class="flex border-b border-fuchsia-600 py-2 px-10">
@@ -76,7 +76,7 @@
                 Title :
               </span>
               <span class="pl-3 tracking-normal text-slate-200 font-medium">{{
-                contact.title
+                contact["title"]
               }}</span>
             </li>
             <li class="flex border-b border-fuchsia-600 py-2 px-10">
@@ -84,7 +84,7 @@
                 Group :
               </span>
               <span class="pl-3 tracking-normal text-slate-200 font-medium">{{
-                group.name
+                group["name"]
               }}</span>
             </li>
           </ul>

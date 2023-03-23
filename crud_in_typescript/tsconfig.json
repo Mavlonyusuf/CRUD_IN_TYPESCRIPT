@@ -1,11 +1,14 @@
 {
   "compilerOptions": {
     "target": "ESNext",
+    "outDir": "dist",
+    "sourceMap": true,
     "useDefineForClassFields": true,
     "module": "ESNext",
     "moduleResolution": "Node",
-    "strict": true,
+    "strict": false,
     "jsx": "preserve",
+    "noImplicitAny": false,
     "resolveJsonModule": true,
     "isolatedModules": true,
     "esModuleInterop": true,

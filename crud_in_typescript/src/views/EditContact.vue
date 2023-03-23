@@ -147,9 +147,9 @@ export default {
     const router = useRouter();
     const route = useRoute();
 
-    let groupId = ref(route.params.id);
+    let groupId: any = ref(route.params.id);
     let loading = ref(false);
-    let contact = ref({});
+    let contact = ref();
     let errorMessage = ref();
     let groups = ref([]);
     async function editContact() {
